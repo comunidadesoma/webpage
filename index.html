@@ -21,10 +21,21 @@
             <a href="pages/quemsomos.html">Quem somos</a>
             <a href="pages/missao.html">Missão</a>
             <a href="pages/contato.html">Contato</a>
-
         </nav>
-
     </header>
+
+    <button class="is-btn-menu-mob is-toggle-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <nav class="is-menu-mob is-menu-is-closed">
+        <a href="#">Home</a>
+        <a href="pages/quemsomos.html">Quem somos</a>
+        <a href="pages/missao.html">Missão</a>
+        <a href="pages/contato.html">Contato</a>
+    </nav>
+
+    <div class="is-overlay is-menu-overlay is-toggle-menu"></div>
 
     <div class="is-contact-info is-bg-black is-text-lightgray">
         <h2 class="is-title is-text-red">Contato</h2>
@@ -49,18 +60,14 @@
     </button>
     
     <div class="is-page-wrapper">
-        <section class="is-full-height is-first-section" id="is-home-presentation">
+        <section class="is-full-height is-first-section is-home-presentation" id="is-home-presentation">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-md-3 offset-md-2 is-display-text">
+                    <div class="col-sm-12 col-md-6 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 is-display-text">
 
-                        <h1 class="is-title is-text-red is-title-xlarge">Olá, bem vindo a comunidade!</h1>
+                        <h1 class="is-title is-text-red is-title-large">Olá, bem vindo a comunidade!</h1>
 
-                        <p class="is-text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Mauris nunc congue nisi vitae. Eros donec ac odio tempor orci. 
-                        Aliquet sagittis id consectetur purus ut faucibus pulvinar.
-                        </p>
+                        <p class="is-text-black is-pad-top-30 is-pad is-mar-bottom-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae. Eros donec ac odio tempor orci.Aliquet sagittis id consectetur purus ut faucibus pulvinar.</p>
 
                         <button class="is-btn-medium is-btn-red">Contato</button>
                     </div>
@@ -235,7 +242,7 @@
         </section>
 
         
-        <section class="is-section-offset-top is-mar-top-30">
+        <section class="is-section-offset-top is-mar-top-45">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4" id="is-avatar-missao">
@@ -275,12 +282,12 @@
         <section class="is-section-offset-top">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4" id="is-avatar-missao">
-                        <div class="is-box-img">
-                            <img src="images/somapessoa.png" alt="Imagem" title="Imagem" class="is-img-responsive" />
+                    <div class="col-sm-6">
+                        <div class="is-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.4074901920685!2d-48.79272173546344!3d-26.410323578797637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb5a674e15117%3A0xd5f25b2c80436dff!2sCOMUNIDADE%20CRIST%C3%83%20SOMA!5e0!3m2!1spt-BR!2sbr!4v1655002599150!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-sm-5 is-mar-top-30">
+                    <div class="col-sm-4 is-mar-top-30">
                         <div class="row">
                             <div class="col-sm-12 is-mar-bottom-30 is-pad-left-30">
                                 <h1 class="is-title is-title-large is-text-red is-pad-left-15">
@@ -324,6 +331,15 @@
             </div>
         </section>
 
+        <footer class="is-footer is-mar-top-45">
+                <div class="is-footer-img">
+                    <img src="images/vinelogosemfundoPRETA.png" alt="Logo Comunidade Cristã Soma" />
+                </div>
+                <div class="is-footer-text is-text-lightgray">
+                   <p>Desenvolvido por <a href="vinepinheiro.myportfolio.com" target="_blank">VAP Design</a> </p>
+                </div>
+        </footer>
+
 
 
     </div>
@@ -333,8 +349,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/main.js">
+    <script src="js/main.js"></script>
 
-    </script>
 </body>
 </html>
