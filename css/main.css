@@ -74,16 +74,12 @@ a:hover{
 
 @media screen and (min-width: 320px){
 
-    .is-page-wrapper, .is-preloader {
+    .is-page-wrapper{
         width: 100%;
         height: 100vh;
         display: table;
         background-color: #828282;
         border: 30px solid #000;
-    }
-
-    .is-preloader-inner {
-        margin-top: -45px;
     }
    
     .is-overlay, .is-menu-overlay {
@@ -194,6 +190,10 @@ a:hover{
         cursor: pointer;
     }
 
+    .is-btn-contact:hover{
+        background-color: #363636;
+        transition: all 0.2s ease-out;
+    }
 
     .is-contact-info {
         width: 245px;
@@ -299,7 +299,7 @@ a:hover{
         background-repeat: no-repeat;
         background-position: 50% bottom;
         position: relative;
-        background-size: 120% auto;
+        background-size: 100% auto;
     }
 
     .is-home-presentation h1 {
@@ -327,7 +327,7 @@ a:hover{
 
     .is-arrow-down {
         width: 100%;
-        height: 50px;
+        height: 60px;
         display: table;
         margin-top: 25px;
         position: relative;
@@ -401,6 +401,11 @@ a:hover{
         cursor: pointer;
     }
 
+    .is-fotos-prev:hover, .is-fotos-next:hover {
+        color: #828282;
+        transition: all 0.2s ease-out;
+    }
+
     .is-fotos-counter span:nth-child(1) {
         color: #363636;
     }
@@ -412,7 +417,7 @@ a:hover{
 
     .is-slider-list {
         width: auto;
-        height: 700px;
+        height: 600px;
         display: block;
         list-style: none;
     }
@@ -436,7 +441,7 @@ a:hover{
     }
 
     .is-slider-list .is-fotos-item-thumb, .is-quem-somos-list .is-fotos-item-thumb {
-        width: 100%;
+        width: 90%;
         height: 100%;
         display: block;
         background-color: #363636;
@@ -673,6 +678,10 @@ a:hover{
     margin: 15px;
 }
 
+.is-mar-top-0 {
+    margin-top: 0;
+}
+
 .is-mar-top-15 {
     margin-top: 15px;
 }
@@ -683,6 +692,10 @@ a:hover{
 
 .is-mar-top-45 {
     margin-top: 45px;
+}
+
+.is-mar-top-100 {
+    margin-top: 100px;
 }
 
 .is-mar-right-15 {
@@ -703,6 +716,10 @@ a:hover{
 
 .is-pad-top-15 {
     padding-top: 15px;
+}
+
+.is-pad-top-45 {
+    padding-top: 45px;
 }
 
 .is-pad-right-15 {
@@ -767,7 +784,7 @@ a:hover{
 }
 
 .is-first-section {
-    height: calc(100vh - 15px);
+    height: calc(100vh - 50px);
 }
 
 .is-no-padding {
