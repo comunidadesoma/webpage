@@ -79,7 +79,7 @@ a:hover{
         height: 100vh;
         display: table;
         background-color: #828282;
-        border: 30px solid #000;
+        border: 15px solid #000;
     }
    
     .is-overlay, .is-menu-overlay {
@@ -440,6 +440,10 @@ a:hover{
         position: relative;
     }
 
+    .is-slider-list .is-fotos-item-info p{
+        text-align: center;
+    }
+
     .is-slider-list .is-fotos-item-thumb, .is-quem-somos-list .is-fotos-item-thumb {
         width: 90%;
         height: 100%;
@@ -470,6 +474,7 @@ a:hover{
     }
     
     .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info{
+        text-align: left;
         margin-left: 105px;
     }
 
@@ -489,7 +494,8 @@ a:hover{
 
 /* Utilitarias */
     .is-title-large {
-        font-size: 30px;
+        font-size: 35px;
+        text-align: center;
     }
 
 @media screen and (min-width: 576px){
@@ -497,10 +503,17 @@ a:hover{
 }
 
 @media screen and (min-width: 768px){
-
+    .is-title-large {
+        font-size: 50px;
+    }
 }
 
 @media screen and (min-width: 992px){
+
+    .is-page-wrapper{
+        border: 30px solid #000;
+    }
+
     .is-menu-mob, .is-btn-menu-mob {
         display: none;
     }
@@ -565,6 +578,11 @@ a:hover{
     .is-home-presentation p {
         text-align: left;
     }
+
+    .is-title-large, .is-slider-list .is-fotos-item-info p{
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
