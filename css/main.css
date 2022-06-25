@@ -252,9 +252,11 @@ a:hover{
     }
 
     .is-map {
-        min-width: 60vh;
-        margin-left: 190px;
-        border-radius: 20px;
+        display: none;
+    }
+
+    .is-page-contact {
+        left: center;
     }
 
     .is-footer {
@@ -447,13 +449,13 @@ a:hover{
     }
 
     .is-slider-list .is-fotos-item-thumb, .is-quem-somos-list .is-fotos-item-thumb {
-        width: 90%;
+        width: 100%;
         height: 100%;
         height: auto;
         display: block;
         background-color: #363636;
         position: relative;
-        padding: 20px;
+        padding: 30px;
     }
 
     .is-slider-list .is-fotos-item-thumb img, .is-quem-somos-list .is-fotos-item-thumb img {
@@ -472,13 +474,18 @@ a:hover{
     }
 
     .is-quem-somos-list .is-slider-item:nth-child(odd) .is-fotos-item-info{
+        width: 100%;
         text-align: right;
         margin-top: 70px;
     }
     
     .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info{
-        text-align: left;
-        margin-left: 105px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .is-quem-somos-list .is-slider-item:nth-child(odd) .is-fotos-item-info p , .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info p {
+        text-align: center;
     }
 
     .is-quem-somos-list .is-slider-item:nth-child(even) > .row {
@@ -605,8 +612,38 @@ a:hover{
         margin-top: calc(26vh - 75px);
     }
 
+    .is-quem-somos-list .is-slider-item:nth-child(odd) .is-fotos-item-info{
+        text-align: right;
+        margin-top: 70px;
+    }
+    
+    .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info{
+        text-align: left;
+        margin-left: 105px;
+    }
+
+    .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info{
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .is-quem-somos-list .is-slider-item:nth-child(odd) .is-fotos-item-info h1 , .is-quem-somos-list .is-slider-item:nth-child(odd) .is-fotos-item-info p {
+        text-align: right;
+    }
+
+    .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info h1 , .is-quem-somos-list .is-slider-item:nth-child(even) .is-fotos-item-info p {
+        text-align: left;
+    }
+
     .is-title-large, .is-slider-list .is-fotos-item-info p{
         text-align: left;
+    }
+
+    .is-map {
+        display: inline-block;
+        margin-left: 10px;
+        border-radius: 20px;
+        position: relative;
     }
 
     /*-- UTILITARIAS --*/
